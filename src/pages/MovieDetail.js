@@ -6,9 +6,11 @@ import { useTitle } from '../hooks';
 export const MovieDetail = () => {
   const params = useParams();
   const [movieDetails, setMovieDetails] = useState([]);
+
   const image = movieDetails.poster_path
     ? `https://image.tmdb.org/t/p/w500/${movieDetails.poster_path}`
     : Backup;
+  // eslint-disable-next-line
   useTitle(`${movieDetails.title}`);
   useEffect(() => {
     async function fetchMovie() {
@@ -85,7 +87,7 @@ export const MovieDetail = () => {
             <a
               href={`https://www.imdb.com/title/${movieDetails.imdb_id}`}
               target="_blank"
-              rel="moreferrer"
+              rel="noopener noreferrer"
             >
               {movieDetails.imdb_id}
             </a>

@@ -17,7 +17,7 @@ export const Footer = () => {
             <a
               href="https://www.instagram.com/karthiga__l/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="hover:underline me-4 md:me-6"
             >
               Instagram
@@ -27,7 +27,7 @@ export const Footer = () => {
             <a
               href="https://www.linkedin.com/in/karthiga-loganathan"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="hover:underline me-4 md:me-6"
             >
               LinkedIn
@@ -37,7 +37,7 @@ export const Footer = () => {
             <a
               href="https://github.com/Karthiga-l/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="hover:underline"
             >
               Github
